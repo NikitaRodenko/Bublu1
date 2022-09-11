@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.btn {
+  overflow: hidden;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  box-shadow: inset 1px 1px 20px rgb(65, 33, 33);
+}
+
+.btn span {
+  display: inline-block;
+  width: 175px;
+  padding-left: 100%;
+  animation: scroll 4s infinite linear;
+}
+
+div {
+  margin: auto;
+  position: relative;
+  background-color: rgb(211, 248, 211);
+  border-radius: 50px;
+  box-shadow: inset 1px 1px 20px rgb(65, 33, 33);
+  width: calc(100vw - 100px);
+  height: calc(100vh - 150px);
+}
+
+p {
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 20px rgb(167, 159, 159);
+  cursor: pointer;
+}
+
+.buble {
+  position: absolute;
+}
